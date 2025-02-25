@@ -28,7 +28,7 @@ import {
 
 export default function Home() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  const [, setShowPopup] = useState(false);
   const isBrowser = typeof window !== "undefined";
 
   const skills = {
@@ -81,10 +81,6 @@ export default function Home() {
   };
 
   // Close Calendly popup
-  const handleClosePopup = () => {
-    setShowPopup(false);
-    setIsCalendlyOpen(false);
-  };
 
   const SkillCategory = ({
     skills,
