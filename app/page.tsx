@@ -105,7 +105,7 @@ export default function Home() {
           <div className="space-y-6">
             <div className="flex flex-col-reverse md:flex-row gap-6 items-start">
               <div className="space-y-4 flex-1">
-                <h1 className="text-4xl font-bold">Hi, I'm Victor 👋</h1>
+                <h1 className="text-4xl font-bold">Hi, I&apos;m Victor 👋</h1>
                 <p className="text-xl text-muted-foreground">
                   Full Stack Web Developer & Computer Engineer
                 </p>
