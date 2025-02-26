@@ -31,26 +31,6 @@ export default function Home() {
   const [, setShowPopup] = useState(false);
   const isBrowser = typeof window !== "undefined";
 
-  const skills = {
-    webDevelopment: [
-      { name: "TypeScript", level: 90 },
-      { name: "JavaScript", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "HTML/CSS", level: 95 },
-    ],
-    programming: [
-      { name: "C++", level: 90 },
-      { name: "C#", level: 80 },
-      { name: "C", level: 90 },
-      { name: "Python", level: 95 },
-    ],
-    embeddedSystems: [
-      { name: "Arduino", level: 90 },
-      { name: "Raspberry Pi", level: 90 },
-      { name: "Orange Pi", level: 90 },
-    ],
-  };
-
   const projects = [
     {
       title: "MVBDC Company Profile",
