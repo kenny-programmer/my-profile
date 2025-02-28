@@ -44,6 +44,17 @@ export default function Home() {
         "Developed and launched a custom web solution incorporating modern design principles and optimal performance.",
       link: "https://fairpointca.com/",
     },
+    {
+      title: "PCL e-Learning Academy",
+      description: "Launched a free e-Learning System for an Academy.",
+      link: "https://e-learning-academy.vercel.app/",
+    },
+    {
+      title: "Iyen VPN",
+      description:
+        "Successfully Developed and Launched a VPN e-commerce system for a client.",
+      link: "https://iyenn-vpn.vercel.app/",
+    },
   ];
 
   const certificates = [
