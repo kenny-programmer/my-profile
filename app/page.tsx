@@ -186,18 +186,19 @@ export default function Home() {
               </CardHeader>
               <CardContent className="px-0 pb-0">
                 <p className="text-muted-foreground mb-4">
-                  I am a Computer Engineering student at the University of
-                  Batangas - Batangas City Campus, passionate about creating
-                  innovative solutions through programming and technology. With
-                  expertise in both software development and hardware
-                  engineering, I bring a unique perspective to every project.
+                  Engr. Victor is a Computer Engineer who studied at the
+                  University of Batangas - Batangas City Campus. He is
+                  passionate about creating innovative solutions through
+                  programming and technology. With expertise in both software
+                  development and hardware engineering, he brings a unique
+                  perspective to every project.
                 </p>
                 <p className="text-muted-foreground">
-                  My experience includes successfully deploying websites for
+                  His experience includes successfully deploying websites for
                   clients, working with embedded systems, and maintaining a
-                  strong academic foundation in computer engineering principles.
-                  I am constantly learning and adapting to new technologies to
-                  stay at the forefront of the industry.
+                  strong foundation in computer engineering principles. Engr.
+                  Victor is constantly learning and adapting to new technologies
+                  to stay at the forefront of the industry.
                 </p>
               </CardContent>
             </Card>
