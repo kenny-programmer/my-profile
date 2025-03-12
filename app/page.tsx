@@ -296,6 +296,7 @@ export default function Home() {
                   <Badge>Python</Badge>
                   <Badge>React.js</Badge>
                   <Badge>Next.js</Badge>
+                  <Badge>Nodejs</Badge>
                   <Badge>HTML/CSS</Badge>
                   <Badge>React</Badge>
                   <Badge>Arduino</Badge>
