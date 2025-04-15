@@ -69,20 +69,20 @@ export default function Home() {
     {
       company: "Freelance Web Developer",
       role: "Full Stack Developer",
-      period: "2024 - Present",
+      period: "2022 - Present",
       description: "Developing and maintaining websites for various clients.",
     },
     {
       company: "Innovations Solutions and Marketing Corporation",
       role: "System Networking - Mikrotiks",
-      period: "January 2025 - Present",
+      period: "January 2025 - April 2025",
       description:
         "Maintining and Developing a System that is used for Mikrotiks.",
     },
     {
       company: "University of Batangas - Batangas City",
       role: "Programmer",
-      period: "2022 - Present",
+      period: "August 2022 - December 2024",
       description:
         "Leading teams in developing innovative engineering solutions.",
     },
@@ -123,11 +123,11 @@ export default function Home() {
                 <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <User className="w-4 h-4" />
-                    <span>21 years old</span>
+                    <span>22 years old</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4" />
-                    <span>+63 993 176 3036</span>
+                    <span>+63 905 423 8524</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4" />
