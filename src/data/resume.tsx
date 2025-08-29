@@ -280,7 +280,7 @@ export const DATA = {
       dates: "December 1st - 2nd, 2023",
       location: "Biñan City, Laguna",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Created a mobile application that provided a library of interactive bedtime stories for children, including a feature for users to record and share their own narrated stories within the app.",
       image: "/icpep.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
@@ -290,7 +290,7 @@ export const DATA = {
       dates: "December 2nd - 3rd, 2022",
       location: "Biñan City, Laguna",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Collaborated with a team to solve algorithmic challenges under time pressure, demonstrating strong problem-solving and teamwork skills.",
       image: "/icpep.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
