@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Computer Engineer passionate about software development and hardware engineering.",
   summary:
-    "I'm currently wrapping up my degree in Computer Engineering at the University of Batangas – Batangas City Campus, set to graduate this September. Over the past few years, I've built and deployed websites for clients, worked on embedded systems, and developed a strong foundation in both software development and hardware engineering.\n\nWhat excites me most is creating innovative solutions—whether that's through full-stack development or working hands-on with hardware. I'm constantly learning, experimenting, and pushing myself to stay ahead of the curve as I prepare to fully dive into the tech industry.",
+    "I'm graduating with my Computer Engineering degree from the University of Batangas in September 2025. Over the past few years, I've built websites for clients, worked on embedded systems, and developed a strong foundation in both software and hardware.\n\nI'm passionate about coding and always eager to learn new tools to keep growing as a developer. Outside of coding, I love taking on new challenges—whether it's a side project or exploring how technology can solve real-world problems.",
   avatarUrl: "/me.jpg",
   skills: [
     "React",
@@ -24,8 +24,9 @@ export const DATA = {
     "C++",
     "MySQL",
     "HTML/CSS",
-    "C#",
-    "C",
+    "Git",
+    "PostgreSQL",
+    "HTML/CSS",
   ],
   // Rest of the DATA object remains the same
   navbar: [
@@ -68,7 +69,7 @@ export const DATA = {
       },
       resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1tac_T1f08xtms3OD99jPoKvidQnA3V0r/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1zgtA3jK-Y9A3TiFOgcE0n9nUcCA2Yi2B/view?usp=sharing",
         icon: Icons.email,
         navbar: false,
       },
@@ -76,12 +77,24 @@ export const DATA = {
   },
   work: [
     {
-      company: "Innovations Solutions and Marketing Cororation",
+      company: "Mechtric",
+      href: "https://www.mechtric.com.au/",
+      badges: [],
+      location: "Sydney, Australia",
+      title: "Web & Digital Designer – eCommerce & CMS - Freelance",
+      logoUrl: "/mechtric.png",
+      start: "August 2025",
+      end: "August 2025",
+      description:
+        "Developed a fully customizable Media Banner Widget for their BigCommerce website, programmed in JSON, enabling seamless integration of any media type and ensuring dynamic responsiveness across the site. This innovation provided greater website flexibility and reduced manual adjustments. Additionally, redesigned their website using Figma and UI/UX best practices, which elevated the brand’s digital presence, improved user experience, and boosted customer engagement.",
+    },
+    {
+      company: "Innovations Solutions and Marketing Corporation",
       href: "https://ismc.amitechco.solutions/",
       badges: [],
       location: "Las Piñas City, Philippines",
       title: "Network Engineer - Internship",
-      logoUrl: "/atomic.png",
+      logoUrl: "/ismc.png",
       start: "January 2025",
       end: "May 2025",
       description:
@@ -92,7 +105,7 @@ export const DATA = {
       badges: [],
       href: "https://fairpointca.com/",
       location: "Remote/Freelance",
-      title: "Full-Stack Web Developer - Freelance",
+      title: "Fullstack Web Developer - Freelance",
       logoUrl: "/shopify.png",
       start: "November 2024",
       end: "January 2025",
@@ -104,7 +117,7 @@ export const DATA = {
       href: "https://www.mightyvictorbuildersdevelopmentcorp.com/",
       badges: [],
       location: "Remote/Freelance",
-      title: "Full-stack Web Developer - Freelance",
+      title: "Fullstack Web Developer - Freelance",
       logoUrl: "/nvidia.png",
       start: "January 2024",
       end: "April 2024",
@@ -143,7 +156,7 @@ export const DATA = {
     {
       title: "Faipoint Accounting",
       href: "https://fairpointca.com",
-      dates: "Dec 2024 - Jan 2024",
+      dates: "Dec 2024 - Present",
       active: true,
       description:
         "Fairpoint Consulting and Accounting provides tailored tax, accounting, and advisory services to help businesses stay compliant, optimize finances, and grow sustainably. They also offer free tax deadline reminders.",
@@ -220,7 +233,7 @@ export const DATA = {
     {
       title: "CK Digitals",
       href: "https://www.ckdigitals.com/",
-      dates: "April 2023 - March 2024",
+      dates: "April 2023 - Present",
       active: true,
       description:
         "CK Digitals is a digital marketing agency that specializes in providing online marketing solutions for businesses. They offer services such as social media management, search engine optimization, and web development. The agency aims to help businesses grow their online presence and reach their target audience effectively.",
