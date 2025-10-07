@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Computer Engineer passionate about software development and hardware engineering.",
   summary:
-    "I'm graduating with my Computer Engineering degree from the University of Batangas in September 2025. Over the past few years, I've built websites for clients, worked on embedded systems, and developed a strong foundation in both software and hardware.\n\nI'm passionate about coding and always eager to learn new tools to keep growing as a developer. Outside of coding, I love taking on new challenges—whether it's a side project or exploring how technology can solve real-world problems.",
+    "I'm a Computer Engineer and I took my degree from the University of Batangas. Over the past few years, I've built websites for clients, worked on embedded systems, and developed a strong foundation in both software and hardware.\n\nI'm passionate about coding and always eager to learn new tools to keep growing as a developer. Outside of coding, I love taking on new challenges—whether it's a side project or exploring how technology can solve real-world problems.",
   avatarUrl: "/me.jpg",
   skills: [
     "React",
@@ -93,7 +93,7 @@ export const DATA = {
       href: "https://ismc.amitechco.solutions/",
       badges: [],
       location: "Las Piñas City, Philippines",
-      title: "Network Engineer - Internship",
+      title: "Network Development Engineer - Internship",
       logoUrl: "/ismc.png",
       start: "January 2025",
       end: "May 2025",
