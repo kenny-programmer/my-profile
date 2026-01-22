@@ -69,13 +69,37 @@ export const DATA = {
       },
       resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1zgtA3jK-Y9A3TiFOgcE0n9nUcCA2Yi2B/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1uAjLXcwIdliTglwVSA22roh99XIam83c/view?usp=sharing",
         icon: Icons.email,
         navbar: false,
       },
     },
   },
   work: [
+    {
+      company: "Unit Network",
+      href: "https://unit.network/",
+      badges: [],
+      location: "New York, USA",
+      title: "Junior Full-stack Engineer - Freelance",
+      logoUrl: "/unit.png",
+      start: "December 2025",
+      end: "Present",
+      description:
+        "Developed an event discovery and community networking web platform from scratch for Unit Network, independently building the complete front-end using Next.js. Focused on creating a responsive, user-friendly interface while following modern front-end best practices. Additionally, conducted security testing on the company’s main website, identified potential vulnerabilities, and provided practical mitigation recommendations that significantly improved the site’s overall security.",
+    },
+    {
+      company: "Netlify",
+      href: "https://netlify.com/",
+      badges: [],
+      location: "San Francisco, USA",
+      title: "Full-stack Support Engineer - Full-time",
+      logoUrl: "/Netlify.png",
+      start: "August 2025",
+      end: "January 2026",
+      description:
+        "Worked as a Full-Stack Support Engineer, supporting and maintaining production web applications built with Next.js, React.js, Vue.js, and Node.js. Investigated and resolved front-end, back-end, and deployment-related issues, including authentication flows (OAuth), serverless functions (AWS Lambda, Edge Functions), and database operations using Supabase (PostgreSQL). Assisted with CI/CD pipelines, monitored deployments on Netlify, and optimized performance and reliability using Cloudflare and CDN technologies, while following best practices for security, scalability, and maintainability.",
+    },
     {
       company: "Mechtric",
       href: "https://www.mechtric.com.au/",
