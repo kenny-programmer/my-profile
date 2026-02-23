@@ -55,17 +55,19 @@ export async function getPost(slug: string) {
 
 async function getAllPosts(dir: string) {
   let mdxFiles = getMDXFiles(dir);
-  return Promise.all(
+  const posts = await Promise.all(
     mdxFiles.map(async (file) => {
       let slug = path.basename(file, path.extname(file));
-      let { metadata, source } = await getPost(slug);
+      let post = await getPost(slug);
+      if (!post) return null;
       return {
-        metadata,
+        metadata: post.metadata,
         slug,
-        source,
+        source: post.source,
       };
     }),
   );
+  return posts.filter((p): p is NonNullable<typeof p> => p !== null);
 }
 
 export async function getBlogPosts() {
