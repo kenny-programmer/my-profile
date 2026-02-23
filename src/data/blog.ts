@@ -57,8 +57,8 @@ async function getAllPosts(dir: string) {
   let mdxFiles = getMDXFiles(dir);
   const posts = await Promise.all(
     mdxFiles.map(async (file) => {
-      let slug = path.basename(file, path.extname(file));
-      let post = await getPost(slug);
+      const slug = path.basename(file, path.extname(file));
+      const post = await getPost(slug);
       if (!post) return null;
       return {
         metadata: post.metadata,
