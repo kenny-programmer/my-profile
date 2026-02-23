@@ -6,7 +6,7 @@ export const DATA = {
   initials: "VR",
   url: "https://victorroxas.vercel.app",
   location: "Tanauan City, Batangas, Philippines",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/Tanauan+City,+Batangas/@14.0916074,121.0198535,12z/data=!3m1!4b1!4m6!3m5!1s0x33bd6f72ec612957:0xb38df4072fe465d6!8m2!3d14.0835429!4d121.147622!16zL20vMDZuaGxy?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D",
   description:
     "Computer Engineer passionate about software development and hardware engineering.",
   summary:
@@ -69,7 +69,7 @@ export const DATA = {
       },
       resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1uAjLXcwIdliTglwVSA22roh99XIam83c/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1FiXHR515jCH2bTJGXcSnREMpT2q6nh19/view?usp=sharing",
         icon: Icons.email,
         navbar: false,
       },
@@ -81,12 +81,24 @@ export const DATA = {
       href: "https://unit.network/",
       badges: [],
       location: "New York, USA",
-      title: "Junior Full-stack Engineer - Freelance",
+      title: "Junior Full-stack Engineer - Contractual",
       logoUrl: "/unit.png",
       start: "December 2025",
       end: "Present",
       description:
         "Developed an event discovery and community networking web platform from scratch for Unit Network, independently building the complete front-end using Next.js. Focused on creating a responsive, user-friendly interface while following modern front-end best practices. Additionally, conducted security testing on the company’s main website, identified potential vulnerabilities, and provided practical mitigation recommendations that significantly improved the site’s overall security.",
+    },
+    {
+      company: "M&G Telemarketing LLC",
+      href: "https://mandgtelemarketingllc.com/",
+      badges: [],
+      location: "North Carolina, USA",
+      title: "Full-stack Engineer - Freelance",
+      logoUrl: "/mg-logo.png",
+      start: "February 2026",
+      end: "February 2026",
+      description:
+        "Executed a complete digital transformation for M&G Telemarketing by migrating a non-functional, static HTML/CSS landing page into a high-performance Next.js application. Architected a robust lead-generation system from scratch, resolving critical communication gaps by integrating a custom Backend REST API with EmailJS to ensure reliable, automated client inquiries. By refactoring legacy code into modular React components and implementing modern front-end best practices, I successfully converted a broken prototype into a fully functional, production-ready business asset.",
     },
     {
       company: "Netlify",
@@ -208,17 +220,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Mighty Victor Builders Development Corporation",
-      href: "https://www.mightyvictorbuildersdevelopmentcorp.com",
-      dates: "Jan 2024 - Apr 2024",
+      title: "Luzon Toll Gates",
+      href: "https://luzon-toll.netlify.app/",
+      dates: "Feb 2026 - Present",
       active: true,
       description:
-        "Mighty Victor Builders Development Corporation is a construction company that specializes in residential and commercial projects. They provide services such as project management, design, and construction.",
-      technologies: ["Next.js", "React", "PostgreSQL", "WIX"],
+        "Engineered a comprehensive toll fee calculation engine for Luzon expressways, addressing the lack of public transit APIs by architecting a custom, type-safe TypeScript data schema. Developed a high-performance, mobile-first interface using Next.js and Tailwind CSS to provide real-time utility for Filipino commuters.",
+      technologies: ["Next.js", "React", "TailwindCSS", "Netlify", "TypeScript", "Lucide React", "React Hooks"],
       links: [
         {
           type: "Website",
-          href: "https://www.mightyvictorbuildersdevelopmentcorp.com",
+          href: "https://luzon-toll.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
