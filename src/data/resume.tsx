@@ -6,7 +6,8 @@ export const DATA = {
   initials: "VR",
   url: "https://victorroxas.vercel.app",
   location: "Tanauan City, Batangas, Philippines",
-  locationLink: "https://www.google.com/maps/place/Tanauan+City,+Batangas/@14.0916074,121.0198535,12z/data=!3m1!4b1!4m6!3m5!1s0x33bd6f72ec612957:0xb38df4072fe465d6!8m2!3d14.0835429!4d121.147622!16zL20vMDZuaGxy?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D",
+  locationLink:
+    "https://www.google.com/maps/place/Tanauan+City,+Batangas/@14.0916074,121.0198535,12z/data=!3m1!4b1!4m6!3m5!1s0x33bd6f72ec612957:0xb38df4072fe465d6!8m2!3d14.0835429!4d121.147622!16zL20vMDZuaGxy?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D",
   description:
     "Computer Engineer passionate about software development and hardware engineering.",
   summary:
@@ -81,10 +82,10 @@ export const DATA = {
       href: "https://unit.network/",
       badges: [],
       location: "New York, USA",
-      title: "Junior Full-stack Engineer - Contractual",
+      title: "Full-stack Engineer - Contractual",
       logoUrl: "/unit.png",
       start: "December 2025",
-      end: "Present",
+      end: "March 2026",
       description:
         "Developed an event discovery and community networking web platform from scratch for Unit Network, independently building the complete front-end using Next.js. Focused on creating a responsive, user-friendly interface while following modern front-end best practices. Additionally, conducted security testing on the company’s main website, identified potential vulnerabilities, and provided practical mitigation recommendations that significantly improved the site’s overall security.",
     },
@@ -105,7 +106,7 @@ export const DATA = {
       href: "https://netlify.com/",
       badges: [],
       location: "San Francisco, USA",
-      title: "Full-stack Support Engineer - Full-time",
+      title: "Full-stack Support Engineer - Freelance",
       logoUrl: "/Netlify.png",
       start: "August 2025",
       end: "January 2026",
@@ -226,7 +227,15 @@ export const DATA = {
       active: true,
       description:
         "Engineered a comprehensive toll fee calculation engine for Luzon expressways, addressing the lack of public transit APIs by architecting a custom, type-safe TypeScript data schema. Developed a high-performance, mobile-first interface using Next.js and Tailwind CSS to provide real-time utility for Filipino commuters.",
-      technologies: ["Next.js", "React", "TailwindCSS", "Netlify", "TypeScript", "Lucide React", "React Hooks"],
+      technologies: [
+        "Next.js",
+        "React",
+        "TailwindCSS",
+        "Netlify",
+        "TypeScript",
+        "Lucide React",
+        "React Hooks",
+      ],
       links: [
         {
           type: "Website",
