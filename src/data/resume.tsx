@@ -70,7 +70,7 @@ export const DATA = {
       },
       resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1maQxalW9NbL31thv0txgUiGGU8ytwKtY/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1I0tgBJPSeWe6R_DTQLBXXeRmwh1TL-dA/view?usp=sharing",
         icon: Icons.email,
         navbar: false,
       },
@@ -78,28 +78,28 @@ export const DATA = {
   },
   work: [
     {
+      company: "Harvest",
+      href: "https://harvest.delivery/",
+      badges: [],
+      location: "Sydney, Australia",
+      title: "Full-stack Engineer - Freelance",
+      logoUrl: "/harvest.png",
+      start: "March 2026",
+      end: "May 2026",
+      description:
+        "I managed a diverse portfolio of over 250 WordPress websites, ranging from medical cannabis and real estate to construction and various other industries. To effectively handle this volume, I developed and implemented custom automation workflows that streamlined site deployments and routine maintenance across the entire network. My work centered on maintaining high performance and security for this wide array of clients, utilizing automated scripting to reduce manual tasks and ensure each platform remained fully responsive and reliable for its specific market."
+      },
+    {
       company: "Unit Network",
       href: "https://unit.network/",
       badges: [],
-      location: "New York, USA",
+      location: "England, UK",
       title: "Full-stack Engineer - Contractual",
       logoUrl: "/unit.png",
       start: "December 2025",
       end: "March 2026",
       description:
         "Developed an event discovery and community networking web platform from scratch for Unit Network, independently building the complete front-end using Next.js. Focused on creating a responsive, user-friendly interface while following modern front-end best practices. Additionally, conducted security testing on the company’s main website, identified potential vulnerabilities, and provided practical mitigation recommendations that significantly improved the site’s overall security.",
-    },
-    {
-      company: "M&G Telemarketing LLC",
-      href: "https://mandgtelemarketingllc.com/",
-      badges: [],
-      location: "North Carolina, USA",
-      title: "Full-stack Engineer - Freelance",
-      logoUrl: "/mg-logo.png",
-      start: "February 2026",
-      end: "February 2026",
-      description:
-        "Executed a complete digital transformation for M&G Telemarketing by migrating a non-functional, static HTML/CSS landing page into a high-performance Next.js application. Architected a robust lead-generation system from scratch, resolving critical communication gaps by integrating a custom Backend REST API with EmailJS to ensure reliable, automated client inquiries. By refactoring legacy code into modular React components and implementing modern front-end best practices, I successfully converted a broken prototype into a fully functional, production-ready business asset.",
     },
     {
       company: "Netlify",
@@ -247,33 +247,40 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "PCL e-Learning Academy",
-      href: "https://e-learning-academy.vercel.app/",
-      dates: "April 2023 - September 2023",
+      title: "Study-Bible App",
+      href: "https://studybible-app.netlify.app/",
+      dates: "March 2026 - Present",
       active: true,
       description:
-        "PCL e-Learning Academy is an online learning platform that provides courses and resources for students and professionals. It offers a wide range of courses in various fields such as programming, design, and business. The platform is designed to be user-friendly and accessible to everyone.",
+        "The Study Bible is a digital platform featuring an AI-driven counselor designed to provide deep theological insights and personalized guidance. I built the application with a focus on seamless AI integration, developing and refining complex system prompts to ensure the AI provides accurate, context-aware responses. My work involved extensive training and prompt engineering to tailor the AI's logic, creating a user-friendly interface that makes exploring scripture and seeking spiritual counsel both intuitive and highly interactive. ",
       technologies: [
-        "Next.js",
-        "Typescript",
+        "OpenAI",
+        "Gemini",
+        "REST API",
         "PostgreSQL",
+        "Supabase",
+        "Next.js",
+        "React",
+        "Typescript",
         "TailwindCSS",
-        "Shadcn UI",
+        "Netlify",
+        "Lucide React",
+        "React Hooks",
       ],
       links: [
         {
           type: "Website",
-          href: "https://e-learning-academy.vercel.app/",
+          href: "https://studybible-app.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/kenny-programmer/e-learning",
+          href: "https://github.com/kenny-programmer/bible-app",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/e-learning.png",
-      video: "",
+      image: "",
+      video: "/studybible.mp4",
     },
     {
       title: "CK Digitals",

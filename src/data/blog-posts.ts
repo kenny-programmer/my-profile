@@ -150,13 +150,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <li><strong>TypeScript</strong> and <strong>structured data</strong> so toll rates and routes are consistent and type-safe</li>
 </ul>
 <p>The result: a needed tool that fills a gap when official or public APIs aren't available.</p>
-<h3>Case Study: M&G Telemarketing</h3>
-<p>A static, broken site was turned into a <strong>functional lead-generation machine</strong>:</p>
-<ul>
-<li><strong>Next.js</strong> for a fast, maintainable front-end</li>
-<li><strong>EmailJS</strong> (and API integration) so form submissions become real leads instead of dead ends</li>
-</ul>
-<p>The site went from "just sitting there" to actively working for the business.</p>
 <h2>The Mindset That Matters</h2>
 <p>It's not just about using technologies—it's about <strong>applying them strategically</strong>. That means:</p>
 <ul>
@@ -327,6 +320,175 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Shipping critical security patches (Issues #1, #3, #4, and #6) to production.</p>
 <h3>Key Work</h3>
 <p>Implementing Rate Limiting to prevent API abuse and finalizing the encrypted session architecture. With the vulnerabilities patched, our infrastructure runs more predictably and securely than ever.</p>
+`.trim(),
+  },
+  // ——— Harvest: 2-week developer tenure ———
+  {
+    slug: "harvest-week-1-day-1-fleet-baseline",
+    metadata: {
+      title: "Welcome to the Fleet: 250 Sites, One Baseline",
+      publishedAt: "2026-03-01",
+      summary:
+        "How I built an inventory + baseline to manage and prioritize work across 250+ WordPress sites spanning medical cannabis, realty, and construction.",
+    },
+    source: `
+<p>Managing over 250 WordPress sites starts with eliminating guesswork. On day one, I focused on building a single operational baseline: capturing WordPress/PHP versions, theme and plugin footprints, hosting differences, traffic hot spots, and “known fragile” integrations that tend to break during updates. With medical cannabis clients sitting alongside realty and construction brands, the goal was to normalize these differences into structured signals—so performance tuning and security hardening could be prioritized by risk and impact instead of ad-hoc firefighting.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-2-triage-signals",
+    metadata: {
+      title: "Triage at Scale: Health Checks That Actually Matter",
+      publishedAt: "2026-03-02",
+      summary:
+        "The day-to-day monitoring loop I used to keep uptime, performance, and security stable across a diverse WordPress network.",
+    },
+    source: `
+<p>With a fleet this large, the daily job isn’t “check everything”—it’s “detect what matters first.” I built a lightweight triage loop around a small set of high-signal indicators: uptime and latency trends, SSL status, disk and backup health, error logs, and WordPress-specific failure modes like stuck cron, plugin update drift, and admin lockouts. The technical focus was reducing noise so alerts were actionable, which is especially important when operating across industries where compliance sensitivity (medical cannabis) and conversion sensitivity (realty/construction lead funnels) shape what “urgent” really means.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-3-performance-bottlenecks",
+    metadata: {
+      title: "Performance Under Pressure: Finding the Real Bottlenecks",
+      publishedAt: "2026-03-03",
+      summary:
+        "A repeatable method for diagnosing WordPress slowness across hundreds of sites without doing deep dives every time.",
+    },
+    source: `
+<p>When dozens of sites report “slow,” the solution isn’t dozens of full investigations—it’s a repeatable bottleneck workflow. I segmented performance issues into quick categories (TTFB vs front-end weight, cache effectiveness, database query pressure, and media overload) and used that to choose targeted fixes: caching alignment, image and asset optimization, pruning expensive plugins, and cleaning up database bloat where it actually moved the needle. The core technical lesson is that scalable performance work relies on consistent classification and a library of proven remediations that can be applied across similar stacks.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-4-security-hygiene",
+    metadata: {
+      title: "Security Hygiene for a Mixed Client Base",
+      publishedAt: "2026-03-04",
+      summary:
+        "How I enforced patch cadence, access control, and hardening practices across 250+ WordPress installs—without slowing delivery.",
+    },
+    source: `
+<p>Security at fleet scale is won with consistency: disciplined update cadence, tight access control, and baseline hardening that’s easy to repeat. I focused on minimizing attack surface by standardizing admin privileges, enforcing strong authentication, maintaining plugin/theme patch discipline, and watching for the common WordPress “early warning signs” that indicate compromise or misuse. Medical cannabis sites often carry additional scrutiny, but the strategy stayed the same across realty and construction too: keep controls simple enough to execute at volume, and observable enough to detect drift before it becomes an incident.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-5-update-rollouts",
+    metadata: {
+      title: "Update Day Without Downtime: Plugins, Themes, and the Domino Effect",
+      publishedAt: "2026-03-05",
+      summary:
+        "A staged rollout approach to WordPress updates that protects lead forms, custom builders, and revenue-critical flows.",
+    },
+    source: `
+<p>On a single site, an update is a click; across 250+, it’s a change-management problem. I treated updates like controlled releases: grouping sites by stack similarity, identifying high-risk plugin combinations, and rolling forward in stages so failures were isolated and recoverable. The technical focus was sequencing—backup, update, verify, and rollback readiness—because a broken form on a realty site or a disrupted booking flow on a construction site can be just as damaging as a security issue. Scaling WordPress ops means making “updates” boring, predictable, and reversible.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-6-vertical-failure-modes",
+    metadata: {
+      title: "Same Platform, Different Failure Modes: Cannabis vs Realty vs Construction",
+      publishedAt: "2026-03-06",
+      summary:
+        "How industry context changes the technical priorities and typical breakpoints of WordPress sites—even with the same CMS.",
+    },
+    source: `
+<p>WordPress is the common layer, but each vertical fails differently. Realty sites often lean on search, listing performance, and lead capture; construction sites push heavy media and require aggressive performance tuning; medical cannabis sites carry added compliance and reputational risk that makes security posture and content stability paramount. The technical focus was building a per-vertical mental model—what breaks first, what’s most business-critical, and which monitoring signals matter—so I could apply the right performance and security checklist to each client instead of forcing a one-size-fits-all playbook.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-1-day-7-retrospective-boring-scale",
+    metadata: {
+      title: "Weekly Retrospective: Making Scale Feel Boring",
+      publishedAt: "2026-03-07",
+      summary:
+        "The operational patterns that turned reactive maintenance into predictable, scalable WordPress management.",
+    },
+    source: `
+<p>Week one ended with a focus on systems—not heroics. By standardizing checklists, defining severity levels, and documenting recurring issues, I reduced the cognitive load of managing hundreds of sites and made it easier to hand off or parallelize work. The technical takeaway is that stability at scale comes from repeatability: consistent baselines, consistent triage, and consistent remediation steps that are small individually but compounding when applied across a large network.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-8-automation-principles",
+    metadata: {
+      title: "From Manual to Mechanical: Automation Principles for WordPress Ops",
+      publishedAt: "2026-03-08",
+      summary:
+        "How I designed automation to be safe-by-default: idempotent, observable, and resilient across different hosting setups.",
+    },
+    source: `
+<p>Automation at 250+ sites has to be engineered for safety, not just speed. I designed scripts around a few non-negotiables: idempotent behavior (safe to re-run), config-driven targeting (no hard-coded assumptions), dry-run and verification modes, and logging that makes every change auditable. The core technical focus was building reliability into the workflow itself—because at fleet scale, a small mistake doesn’t stay small, and the best automation is the kind you can trust repeatedly across diverse WordPress environments.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-9-inventory-automation",
+    metadata: {
+      title: "The Inventory Script: Turning Chaos into Structured Data",
+      publishedAt: "2026-03-09",
+      summary:
+        "The logic behind automated discovery: normalizing versions, plugin states, and health signals into a usable fleet dataset.",
+    },
+    source: `
+<p>The first automation win was turning scattered site details into structured data. I built inventory routines that gathered consistent metadata—core/PHP versions, plugin and theme status, SSL and backup signals, storage usage, and known error indicators—so decision-making could be data-driven. The technical focus wasn’t “collect everything,” but “collect what enables action”: inputs that support risk scoring, targeted rollouts, and quick identification of outliers, without manually opening hundreds of WordPress dashboards.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-10-deployment-workflows",
+    metadata: {
+      title: "Consistent Deployments: A Fleet-Safe WordPress Release Workflow",
+      publishedAt: "2026-03-10",
+      summary:
+        "A structured deployment sequence—pre-flight, backup, deploy, verify, rollback—adapted to heterogeneous WordPress stacks.",
+    },
+    source: `
+<p>Deployments across many WordPress sites are hard because each site is “slightly different.” I built a workflow that treated deployment like a checklist-driven pipeline: pre-flight validation, reliable backups, a controlled change step, verification checks (forms, key pages, and error signals), and clear rollback triggers when verification failed. The technical focus was sequencing and isolation—making sure changes were applied consistently while respecting stack differences—so shipping improvements didn’t require manual babysitting site by site.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-11-maintenance-automation",
+    metadata: {
+      title: "Automating Maintenance Windows: Updates, Caches, and Cleanups",
+      publishedAt: "2026-03-11",
+      summary:
+        "How automation streamlined routine operations like updates, cache purges, database cleanup, and log rotation—without surprises.",
+    },
+    source: `
+<p>Routine maintenance becomes a bottleneck when it’s manual. I automated safe sequences for common tasks—updates, cache invalidation, database optimization, log rotation, and housekeeping—so maintenance could be executed predictably with minimal risk. The technical core was order-of-operations and guardrails: ensuring each step had prerequisites, produced verifiable outputs, and generated logs that made auditing easy. This reduced repetitive work while improving consistency across the entire portfolio.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-12-risk-scoring",
+    metadata: {
+      title: "Risk Scoring: Picking the 20 Sites That Need Attention Today",
+      publishedAt: "2026-03-12",
+      summary:
+        "Turning raw monitoring signals into a prioritized action list based on drift, security posture, errors, and business sensitivity.",
+    },
+    source: `
+<p>Automation produced data—risk scoring turned it into decisions. I combined signals like update drift, error rates, suspicious activity indicators, performance regressions, and “business criticality” into a simple prioritization model. The technical focus was transforming scattered telemetry into a ranked daily action list, so attention went to the highest-impact sites first—especially important when medical cannabis clients require a tighter security posture while realty and construction sites depend heavily on lead capture reliability.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-13-guardrails-rollbacks",
+    metadata: {
+      title: "Guardrails and Rollbacks: Making Automation Safe at Fleet Scale",
+      publishedAt: "2026-03-13",
+      summary:
+        "The safety engineering behind the scripts: batching, rate limits, fail-fast behavior, and verification-driven rollback.",
+    },
+    source: `
+<p>Speed without safety is just a faster way to break things. I added guardrails that kept automation predictable: batching changes, rate-limiting actions, isolating failures per site, and failing fast when preconditions weren’t met. The technical core was verification-driven execution—every operation needed a clear “success test,” and when that test failed, the workflow supported rollback or safe abort. These patterns made automation dependable across hundreds of sites and reduced the operational risk of scaling maintenance and deployments.</p>
+`.trim(),
+  },
+  {
+    slug: "harvest-week-2-day-14-outcomes",
+    metadata: {
+      title: "Two Weeks Later: Efficiency That Scales",
+      publishedAt: "2026-03-14",
+      summary:
+        "How standardization + automation reduced manual workload, stabilized performance/security baselines, and improved fleet reliability.",
+    },
+    source: `
+<p>By the end of week two, the system was measurably more scalable: fewer repetitive manual tasks, faster and safer deployments, and a more consistent performance and security baseline across the portfolio. The technical focus is the compounding effect of operational tooling—each script and workflow becomes reusable infrastructure, and each standardized checklist becomes easier to automate next. The result is a trajectory where the fleet can grow without the workload growing linearly, because efficiency is built into the platform operations themselves.</p>
 `.trim(),
   },
 ];
