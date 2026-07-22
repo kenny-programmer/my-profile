@@ -169,21 +169,21 @@ export default function Chatbot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed bottom-40 right-6 md:bottom-24 md:right-6 w-96 max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-12rem)] rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-background/95 backdrop-blur-xl shadow-2xl flex flex-col z-50 overflow-hidden font-sans"
+            className="fixed bottom-40 right-6 md:bottom-24 md:right-6 w-96 md:w-[410px] max-w-[calc(100vw-2rem)] h-[520px] md:h-[600px] max-h-[calc(100vh-12rem)] rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white/98 dark:bg-zinc-950/98 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] flex flex-col z-50 overflow-hidden font-sans"
           >
             {/* Header */}
-            <div className="p-4.5 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 flex items-center justify-between">
+            <div className="p-5 border-b border-zinc-100 dark:border-zinc-800/80 bg-white/50 dark:bg-zinc-950/50 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="bg-zinc-100 dark:bg-zinc-800 p-2 rounded-xl border border-zinc-200 dark:border-zinc-700">
-                  <Sparkles className="size-4.5 text-zinc-900 dark:text-zinc-100" />
+                <div className="bg-zinc-950 dark:bg-zinc-100 text-white dark:text-zinc-950 size-9 rounded-xl flex items-center justify-center font-bold text-xs select-none">
+                  VA
                 </div>
                 <div>
                   <h3 className="text-sm font-bold tracking-tight text-foreground flex items-center gap-1.5">
                     Victor&apos;s Assistant
                   </h3>
-                  <div className="flex items-center gap-1">
-                    <span className="h-1.5 w-1.5 rounded-full bg-zinc-500 dark:bg-zinc-400 inline-block"></span>
-                    <span className="text-[10px] text-muted-foreground font-semibold">Representative bot</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-2 w-2 rounded-full bg-zinc-400 dark:bg-zinc-500 animate-pulse inline-block"></span>
+                    <span className="text-[10px] text-muted-foreground font-semibold">Live Representative Bot</span>
                   </div>
                 </div>
               </div>
@@ -216,23 +216,19 @@ export default function Chatbot() {
                   }`}
                 >
                   <div
-                    className={`size-8 rounded-full flex items-center justify-center shrink-0 border shadow-xs ${
+                    className={`size-8.5 rounded-lg flex items-center justify-center shrink-0 border shadow-sm text-[10px] font-black tracking-tighter ${
                       msg.role === "user"
-                        ? "bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700"
-                        : "bg-zinc-950 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-950 border-transparent"
+                        ? "bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-700"
+                        : "bg-zinc-950 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-955 border-transparent"
                     }`}
                   >
-                    {msg.role === "user" ? (
-                      <User className="size-4" />
-                    ) : (
-                      <Bot className="size-4" />
-                    )}
+                    {msg.role === "user" ? "ME" : "AI"}
                   </div>
                   <div
                     className={`p-3.5 rounded-2xl text-sm leading-relaxed ${
                       msg.role === "user"
-                        ? "bg-zinc-950 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-950 rounded-tr-none shadow-xs"
-                        : "bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200/60 dark:border-zinc-800 rounded-tl-none shadow-xs"
+                        ? "bg-zinc-950 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-955 rounded-tr-none shadow-sm border border-zinc-900 dark:border-zinc-200/60"
+                        : "bg-zinc-50/80 dark:bg-zinc-900/40 text-zinc-800 dark:text-zinc-200 border border-zinc-100 dark:border-zinc-800/80 rounded-tl-none shadow-xs"
                     }`}
                   >
                     {msg.role === "assistant" ? (
@@ -249,10 +245,10 @@ export default function Chatbot() {
               {/* Typing Indicator */}
               {isLoading && (
                 <div className="flex gap-3 max-w-[80%] mr-auto">
-                  <div className="size-8 rounded-full flex items-center justify-center shrink-0 border bg-zinc-950 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-950 border-transparent shadow-xs">
-                    <Bot className="size-4" />
+                  <div className="size-8.5 rounded-lg flex items-center justify-center shrink-0 border bg-zinc-950 dark:bg-zinc-50 text-zinc-50 dark:text-zinc-955 border-transparent shadow-sm text-[10px] font-black tracking-tighter">
+                    AI
                   </div>
-                  <div className="p-3.5 bg-zinc-100 dark:bg-zinc-900 rounded-2xl rounded-tl-none border border-zinc-200 dark:border-zinc-800 flex items-center gap-1 h-9.5">
+                  <div className="p-3 bg-zinc-50/80 dark:bg-zinc-900/40 border border-zinc-100 dark:border-zinc-800/80 rounded-2xl rounded-tl-none flex items-center gap-1.5 h-9.5">
                     <span className="h-1.5 w-1.5 bg-zinc-400 dark:bg-zinc-500 rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
                     <span className="h-1.5 w-1.5 bg-zinc-400 dark:bg-zinc-500 rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
                     <span className="h-1.5 w-1.5 bg-zinc-400 dark:bg-zinc-500 rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
@@ -277,14 +273,14 @@ export default function Chatbot() {
 
             {/* Suggested Questions badges */}
             {messages.length === 1 && !isLoading && (
-              <div className="px-4 pb-3 pt-1.5 flex flex-col gap-2 border-t border-zinc-200 dark:border-zinc-800">
-                <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider">Suggested Questions</span>
-                <div className="flex flex-wrap gap-1.5">
+              <div className="px-5 pb-4 pt-3 flex flex-col gap-2.5 border-t border-zinc-100 dark:border-zinc-800/60">
+                <span className="text-[10px] text-muted-foreground font-bold uppercase tracking-widest">Suggested Queries</span>
+                <div className="grid grid-cols-2 gap-2">
                   {SUGGESTED_QUESTIONS.map((q) => (
                     <button
                       key={q}
                       onClick={() => handleSend(q)}
-                      className="text-xs bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-700 text-left transition-all duration-200 cursor-pointer font-semibold shadow-xs hover:scale-102"
+                      className="text-xs bg-white dark:bg-zinc-900/60 hover:bg-zinc-50 dark:hover:bg-zinc-900 text-zinc-800 dark:text-zinc-200 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800/80 text-left transition-all duration-200 cursor-pointer font-semibold shadow-xs hover:border-zinc-400 dark:hover:border-zinc-600 active:scale-98 leading-normal"
                     >
                       {q}
                     </button>
@@ -299,26 +295,28 @@ export default function Chatbot() {
                 e.preventDefault();
                 handleSend(input);
               }}
-              className="p-3 border-t border-zinc-200 dark:border-zinc-800 bg-background/50 flex gap-2 items-center"
+              className="p-3.5 border-t border-zinc-100 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-950/80 flex gap-2 items-center"
             >
-              <input
-                ref={inputRef}
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask a question..."
-                disabled={isLoading}
-                className="flex-1 min-w-0 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1.5 focus:ring-zinc-500/30 focus:border-zinc-500/40 transition-all text-foreground"
-              />
+              <div className="flex-1 flex gap-2 items-center bg-zinc-100/65 dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-zinc-800/60 rounded-full px-4 py-1.5 focus-within:border-zinc-400 dark:focus-within:border-zinc-600 transition-colors">
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="Type a message..."
+                  disabled={isLoading}
+                  className="flex-1 min-w-0 bg-transparent py-1.5 text-xs sm:text-sm focus:outline-none transition-all text-foreground placeholder:text-muted-foreground"
+                />
+              </div>
               <button
                 type="submit"
                 disabled={isLoading || !input.trim()}
-                className="flex items-center justify-center p-2.5 rounded-xl bg-zinc-950 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-950 hover:opacity-90 disabled:opacity-50 disabled:hover:opacity-50 transition-opacity cursor-pointer shadow shrink-0"
+                className="flex items-center justify-center size-10 rounded-full bg-zinc-950 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-955 hover:opacity-90 disabled:opacity-50 disabled:hover:opacity-50 transition-all cursor-pointer shadow shrink-0 active:scale-95"
               >
                 {isLoading ? (
-                  <Loader2 className="size-4 animate-spin" />
+                  <Loader2 className="size-4.5 animate-spin" />
                 ) : (
-                  <Send className="size-4" />
+                  <Send className="size-4.5" />
                 )}
               </button>
             </form>
