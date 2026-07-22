@@ -27,7 +27,17 @@ export const DATA = {
     "HTML/CSS",
     "Git",
     "PostgreSQL",
+    "React Native",
+    "Swift",
+    "LLMs",
     "HTML/CSS",
+    "OpenAI",
+    "Anthropic",
+    "Google Gemini",
+    "REST APIs",
+    "Github Actions",
+    "Vercel",
+    "Netlify",
   ],
   // Rest of the DATA object remains the same
   navbar: [
@@ -78,6 +88,18 @@ export const DATA = {
   },
   work: [
     {
+      company: "Fairpoint Consulting and Accounting Services",
+      badges: [],
+      href: "https://fairpointca.com/",
+      location: "Remote/Freelance",
+      title: "Fullstack Web Developer - Freelance",
+      logoUrl: "/shopify.png",
+      start: "November 2024",
+      end: "Present",
+      description:
+        "Developed and maintain a web application for a client using Next.js, Typescript, and TailwindCSS. The application is a application for a client to manage their accounting and consulting services. The application includes features such as user authentication, data visualization, and reporting. I also integrated the application with various third-party APIs such as Calendly and Supabase.",
+    },
+    {
       company: "Harvest",
       href: "https://harvest.delivery/",
       badges: [],
@@ -88,7 +110,7 @@ export const DATA = {
       end: "May 2026",
       description:
         "I managed a diverse portfolio of over 250 WordPress websites, ranging from medical cannabis and real estate to construction and various other industries. To effectively handle this volume, I developed and implemented custom automation workflows that streamlined site deployments and routine maintenance across the entire network. My work centered on maintaining high performance and security for this wide array of clients, utilizing automated scripting to reduce manual tasks and ensure each platform remained fully responsive and reliable for its specific market."
-      },
+    },
     {
       company: "Unit Network",
       href: "https://unit.network/",
@@ -136,18 +158,6 @@ export const DATA = {
       end: "May 2025",
       description:
         "Maintained and troubleshot network devices such as routers, switches, and firewalls. Configured and managed network protocols such as OSPF, BGP, and EIGRP. Assisted in the design and implementation of network infrastructure for various clients. Also developed a system to use in Piso WiFi using PHP, HTML/CSS, and Javascript.",
-    },
-    {
-      company: "Fairpoint Consulting and Accounting Services",
-      badges: [],
-      href: "https://fairpointca.com/",
-      location: "Remote/Freelance",
-      title: "Fullstack Web Developer - Freelance",
-      logoUrl: "/shopify.png",
-      start: "November 2024",
-      end: "January 2025",
-      description:
-        "Developed a web application for a client using Next.js, Typescript, and TailwindCSS. The application is a application for a client to manage their accounting and consulting services. The application includes features such as user authentication, data visualization, and reporting. I also integrated the application with various third-party APIs such as Calendly and Supabase.",
     },
     {
       company: "MVBDC",
