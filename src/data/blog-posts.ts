@@ -491,4 +491,43 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>By the end of week two, the system was measurably more scalable: fewer repetitive manual tasks, faster and safer deployments, and a more consistent performance and security baseline across the portfolio. The technical focus is the compounding effect of operational tooling—each script and workflow becomes reusable infrastructure, and each standardized checklist becomes easier to automate next. The result is a trajectory where the fleet can grow without the workload growing linearly, because efficiency is built into the platform operations themselves.</p>
 `.trim(),
   },
+  {
+    slug: "building-slime-slayer-and-ai-chatbot",
+    metadata: {
+      title: "Building Slime Slayer 2D & Integrating Gemini: A Retro Game & AI Assistant Showcase",
+      publishedAt: "2026-08-06",
+      summary:
+        "A deep dive into building an in-browser retro 2D top-down game using HTML5 Canvas, React, and Web Audio API, combined with a custom-prompted Gemini AI Chatbot assistant.",
+    },
+    source: `
+<p>I recently added two interactive experiences to my portfolio: a fully playable retro-style game called <strong>Slime Slayer 2D</strong> and an intelligent <strong>AI Chatbot Assistant</strong>. Here is how I brought them together with React, TypeScript, HTML5 Canvas, and the Gemini API.</p>
+
+<h2>1. Slime Slayer 2D: A Canvas Game Engine in React</h2>
+<p>Instead of relying on heavy third-party game frameworks, I built a custom, zero-dependency 2D top-down game engine using the native HTML5 Canvas API coupled with React.</p>
+<ul>
+  <li><strong>Rendering & Animation:</strong> The player controls a GBA-style visor knight with procedural leg walking animations. Enemies are hopping green slimes. Everything is rendered frame-by-frame with black outlines for a clean retro aesthetic.</li>
+  <li><strong>Audio Synthesis:</strong> To keep bundle sizes minimal and avoid loading external audio files, I used the browser's <strong>Web Audio API</strong> to synthesize 8-bit sound effects (slashing, dashing, shield activation, hit impacts, and dying) dynamically.</li>
+  <li><strong>Key Combos & Action System:</strong> The game tracks specific sequences of keypresses to execute powerful combat abilities:
+    <ul>
+      <li><code>3</code> then <code>1</code> (Dash then Slash) &rarr; <em>Dash & Slice</em>: Dash forward with purple particle trails, executing a 360-degree spin attack.</li>
+      <li><code>1-1-1</code> &rarr; <em>Grand Tempest</em>: Unleashes 3 piercing teal wind slashes forward.</li>
+      <li><code>1-1-2</code> &rarr; <em>Fire Fan</em>: Fires a spread of 3 hopping fireballs.</li>
+      <li><code>1-3-4</code> &rarr; <em>Divine Aegis</em>: Heals 30 HP and grants a temporary invincibility shield.</li>
+    </ul>
+  </li>
+  <li><strong>UI Integration:</strong> The game is rendered outside the standard layout hierarchy using React Portals (<code>createPortal</code>) to launch a responsive, full-screen overlay when the player clicks the button under my profile picture.</li>
+</ul>
+
+<h2>2. Portfolio AI Assistant: Powered by Gemini 3.5 Flash</h2>
+<p>To let visitors ask questions about my background, projects, or how to play the game, I built a dedicated AI chatbot. The backend uses the <code>gemini-3.5-flash</code> model.</p>
+<ul>
+  <li><strong>High-Context Prompts:</strong> The system prompt dynamically reads my structured resume data directly from the codebase (ensuring it never goes stale when I update my resume).</li>
+  <li><strong>Game Mechanics Knowledge:</strong> The chatbot is instructed on the exact combo keystrokes and lore of Slime Slayer 2D, so it can guide users on how to beat the high scores.</li>
+  <li><strong>Focused Constraints:</strong> To ensure the assistant is secure and relevant, it is strictly forbidden from answering off-topic queries (such as general programming questions, math, or history) and will politely redirect users to ask about my portfolio.</li>
+</ul>
+
+<h2>The Result</h2>
+<p>Adding these features made my portfolio not just a static sheet of text, but a living, interactive playground. Feel free to open the chatbot in the corner or launch Slime Slayer to test out the combos yourself!</p>
+`.trim(),
+  },
 ];
