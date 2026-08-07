@@ -5,10 +5,12 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import PixelTransition from "@/components/PixelTransition";
 import GameButtonModal from "@/components/game-button-modal";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Image from "next/image";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -32,10 +34,36 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="flex flex-col items-center gap-3">
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <PixelTransition
+                firstContent={
+                  <Image
+                    src={DATA.avatarUrl}
+                    alt={DATA.name}
+                    fill
+                    className="rounded-full object-cover"
+                  />
+                }
+                secondContent={
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      display: "grid",
+                      placeItems: "center",
+                      backgroundColor: "#111"
+                    }}
+                    className="rounded-full"
+                  >
+                    <p style={{ fontWeight: 900, fontSize: "1.5rem", color: "#ffffff" }}>NO!!!</p>
+                  </div>
+                }
+                gridSize={9}
+                pixelColor="#ffffff"
+                once={false}
+                animationStepDuration={0.2}
+                className="rounded-full size-28 border border-border"
+                aspectRatio=""
+              />
               <GameButtonModal />
             </BlurFade>
           </div>
