@@ -530,4 +530,110 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Adding these features made my portfolio not just a static sheet of text, but a living, interactive playground. Feel free to open the chatbot in the corner or launch Slime Slayer to test out the combos yourself!</p>
 `.trim(),
   },
+  {
+    slug: "ai-document-intelligence-lending-onboarding",
+    metadata: {
+      title: "AI Document Intelligence: Rethinking User Onboarding in Fintech",
+      publishedAt: "2026-08-18",
+      summary:
+        "How multimodal AI and automated document extraction remove manual data entry barriers and modernize customer onboarding in lending platforms.",
+    },
+    source: `
+<p>One of the biggest friction points in modern financial services and digital lending is user onboarding. Lengthy forms requiring borrowers to manually transcribe identification, income details, and business records lead to high drop-off rates and data entry errors. Over the past weeks, our focus centered on eliminating this barrier through AI-driven document intelligence.</p>
+
+<h2>From Manual Transcription to Intelligent Extraction</h2>
+<p>Traditional OCR simply converted image pixels to raw strings of text, leaving developers to write brittle regex patterns that broke with the slightest change in layout. By contrast, modern multimodal AI processes visual documents holistically—understanding tabular relations, handwritten fields, and contextual labels simultaneously.</p>
+
+<h3>Key Architectural Concepts:</h3>
+<ul>
+  <li><strong>Instant Document Intake:</strong> Allowing users to take a photo on their mobile device and immediately extract structured, validated fields into the application state.</li>
+  <li><strong>Human-in-the-Loop Validation:</strong> Rather than forcing users to type everything from scratch, the interface presents pre-filled fields with confidence indicators, turning an arduous typing exercise into a quick verification check.</li>
+  <li><strong>Mobile-First Ergonomics:</strong> Optimizing camera capture and responsiveness across screen sizes to ensure effortless document submission on mobile browsers.</li>
+</ul>
+
+<h2>The Impact</h2>
+<p>Transforming complex loan application workflows into intuitive, camera-assisted onboarding fundamentally changes customer conversion. When technology shoulders the burden of structured data extraction, users enjoy a frictionless experience while businesses receive higher data accuracy from day one.</p>
+`.trim(),
+  },
+  {
+    slug: "architecting-resilient-fintech-payment-rails",
+    metadata: {
+      title: "Architecting Resilient Payment Rails: Idempotency, Security & Multi-Gateway Routing",
+      publishedAt: "2026-08-28",
+      summary:
+        "The foundational engineering concepts behind unifying disparate global payment providers into a high-availability, PCI-compliant payment infrastructure.",
+    },
+    source: `
+<p>Building payment infrastructure demands a completely different mindset than building standard web applications. When money moves across distributed systems, network partitions, gateway outages, and concurrent requests are inevitable realities. Designing a platform to handle these challenges requires strict adherence to core reliability patterns.</p>
+
+<h2>1. The Unified Payment Rail</h2>
+<p>Different global and regional payment gateways—such as Stripe, Xendit, Maya, PayPal, and Checkout.com—operate with vastly different API paradigms, webhook conventions, and settlement lifecycles. Abstracting these into a single, unified payment interface decouples frontend checkout experiences from provider-specific nuances.</p>
+
+<h2>2. Zero-Trust Security & Tokenization</h2>
+<p>Protecting sensitive financial data isn’t merely a best practice; it is a strict regulatory requirement. By leveraging tokenization proxies and security isolation layers (like Very Good Security), sensitive cardholder data never touches application servers in plaintext. This drastically reduces the compliance scope while keeping customer data safe against breach vectors.</p>
+
+<h2>3. Guaranteed Idempotency & State Machines</h2>
+<p>In distributed financial systems, requests will be retried when networks stutter. To prevent duplicate charges, every financial transaction must be governed by idempotent keys and deterministic state machines:</p>
+<ul>
+  <li><strong>Idempotency Keys:</strong> Ensuring that retried transaction requests always produce the exact same outcome without creating duplicate records or charges.</li>
+  <li><strong>Asynchronous Reconciliation:</strong> Handling webhooks and provider callback lag through background reconciliation queues and distributed locks.</li>
+  <li><strong>Graceful Degradation:</strong> Seamlessly falling back to secondary payment rails if a primary processor experiences latency spikes or downtime.</li>
+</ul>
+
+<h2>Reliability as a Feature</h2>
+<p>When dealing with transactions, speed is good, but predictability and consistency are paramount. Building resilient payment rails means architecting for failure at every step and guaranteeing that every single transaction state is accounted for.</p>
+`.trim(),
+  },
+  {
+    slug: "cloud-devops-and-event-driven-messaging",
+    metadata: {
+      title: "Event-Driven Scalability: CI/CD Pipelines & High-Throughput Messaging",
+      publishedAt: "2026-09-08",
+      summary:
+        "How modern continuous delivery pipelines, in-memory caching, and decoupled transactional messaging keep cloud systems resilient under high load.",
+    },
+    source: `
+<p>As applications expand across multiple cloud services and APIs, ensuring seamless updates and real-time communication becomes essential. Over the past few weeks, we explored concepts around automated release engineering, caching layers, and asynchronous messaging architectures.</p>
+
+<h2>1. Declarative CI/CD Pipelines</h2>
+<p>Modern software delivery relies on automated pipelines (leveraging Buddy CI/CD and GitHub Actions) that execute linting, type validation, security scanning, and multi-cloud deployments automatically upon every code commit. Removing manual deployment steps guarantees reproducible builds and virtually eliminates release-day surprises.</p>
+
+<h2>2. Asynchronous Transactional Messaging</h2>
+<p>Directly calling third-party communication APIs (such as transactional email via SendGrid or SMS via Twilio) during a critical request cycle introduces latency and single points of failure. Decoupling messaging into background worker pipelines ensures that:</p>
+<ul>
+  <li>User-facing API endpoints return immediately without waiting on external network handshakes.</li>
+  <li>Failed message deliveries automatically trigger backoff-and-retry mechanisms without disrupting core application flows.</li>
+  <li>High-priority notifications (receipts, two-factor authentication, security alerts) are processed with deterministic ordering.</li>
+</ul>
+
+<h2>3. In-Memory Acceleration with Caching</h2>
+<p>Integrating distributed in-memory data stores like Redis provides rapid state retrieval, rate limiting, and session coordination across stateless cloud instances. This shields core relational databases from spike traffic and delivers sub-millisecond response times for frequently accessed datasets.</p>
+`.trim(),
+  },
+  {
+    slug: "fullstack-cohesion-modern-frontends-cloud-backends",
+    metadata: {
+      title: "Full-Stack Cohesion: Bridging Modern Frontends with Scalable Cloud APIs",
+      publishedAt: "2026-09-14",
+      summary:
+        "Harmonizing reactive frontend frameworks with scalable multi-language backend services to create fast, unified user experiences.",
+    },
+    source: `
+<p>A great software experience comes from the harmony between an intuitive, responsive user interface and a rock-solid cloud backend. Connecting reactive frontends across Next.js, React, and Angular with backend services requires intentional design choices across schemas, styling, and data contracts.</p>
+
+<h2>Choosing the Right Runtime for the Task</h2>
+<p>Modern cloud architectures benefit when services are built with runtimes tailored to their specific strengths:</p>
+<ul>
+  <li><strong>Go:</strong> Ideal for high-throughput, low-latency microservices, concurrent transaction workers, and network proxies.</li>
+  <li><strong>Python & Flask / FastAPI:</strong> Unmatched for data processing, AI integrations, and rapid service prototyping.</li>
+  <li><strong>TypeScript / Node.js:</strong> Unifies frontend and backend schemas, allowing end-to-end type safety from database query to UI component.</li>
+</ul>
+
+<h2>Responsive Design & Maintainable Styling</h2>
+<p>Creating interfaces that look polished across mobile, tablet, and ultra-wide displays requires balancing utility-first CSS (Tailwind) with structured stylesheets (SCSS). Establishing reusable design tokens, flexible grid layouts, and progressive disclosure patterns ensures the UI remains accessible and clean as new features are introduced.</p>
+
+<h2>Looking Ahead</h2>
+<p>Building full-stack software is ultimately about orchestrating different tools into a unified, coherent product. By focusing on strong contracts, modular boundaries, and scalable cloud foundations, we build applications that are pleasant to use and built to last.</p>
+`.trim(),
+  },
 ];
