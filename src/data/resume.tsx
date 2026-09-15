@@ -101,7 +101,7 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https.://www.youtube.com/",
+        url: "https://www.youtube.com/",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -114,7 +114,7 @@ export const DATA = {
       resume: {
         name: "Resume",
         url: "https://drive.google.com/file/d/1I0tgBJPSeWe6R_DTQLBXXeRmwh1TL-dA/view?usp=sharing",
-        icon: Icons.email,
+        icon: Icons.googleDrive,
         navbar: false,
       },
     },
@@ -142,7 +142,7 @@ export const DATA = {
       start: "November 2024",
       end: "Present",
       description:
-        "Developed and maintain a web application for a client using Next.js, Typescript, and TailwindCSS. The application is a application for a client to manage their accounting and consulting services. The application includes features such as user authentication, data visualization, and reporting. I also integrated the application with various third-party APIs such as Calendly and Supabase.",
+        "Developed and maintain a web application for a client using Next.js, Typescript, and TailwindCSS. The application is an application for a client to manage their accounting and consulting services. The application includes features such as user authentication, data visualization, and reporting. I also integrated the application with various third-party APIs such as Calendly and Supabase.",
     },
     {
       company: "Archer Wealth",
@@ -242,7 +242,7 @@ export const DATA = {
       school: "La Consolacion College of Tanauan",
       href: "https://lcctanauan.edu.ph/",
       degree:
-        "Technical Vocational - Information and Commucations Technology (TVL-ICT)",
+        "Technical Vocational - Information and Communications Technology (TVL-ICT)",
       logoUrl: "/waterloo.png",
       start: "2019",
       end: "2021",
@@ -258,7 +258,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Faipoint Accounting",
+      title: "Fairpoint Accounting",
       href: "https://fairpointca.com",
       dates: "Dec 2024 - Present",
       active: true,
@@ -389,7 +389,7 @@ export const DATA = {
       dates: "December 5th - 6th, 2024",
       location: "Lipa City, Batangas",
       description:
-        "Annalyzed and designed a breadboard circuit for a given problem statement. The circuit was designed to solve a problem related to electronics and electrical engineering.",
+        "Analyzed and designed a breadboard circuit for a given problem statement. The circuit was designed to solve a problem related to electronics and electrical engineering.",
       image: "/icpep.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],

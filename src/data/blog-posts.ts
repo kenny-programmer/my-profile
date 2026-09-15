@@ -519,7 +519,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 
 <h2>2. Portfolio AI Assistant: Powered by Gemini 3.5 Flash</h2>
-<p>To let visitors ask questions about my background, projects, or how to play the game, I built a dedicated AI chatbot. The backend uses the <code>gemini-3.5-flash</code> model.</p>
+<p>To let visitors ask questions about my background, projects, or how to play the game, I built a dedicated AI chatbot. The backend uses the <code>gemini-1.5-flash</code> model.</p>
 <ul>
   <li><strong>High-Context Prompts:</strong> The system prompt dynamically reads my structured resume data directly from the codebase (ensuring it never goes stale when I update my resume).</li>
   <li><strong>Game Mechanics Knowledge:</strong> The chatbot is instructed on the exact combo keystrokes and lore of Slime Slayer 2D, so it can guide users on how to beat the high scores.</li>
