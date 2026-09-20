@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import PixelTransition from "@/components/PixelTransition";
 import GameButtonModal from "@/components/game-button-modal";
+import { GitHubContributions } from "@/components/github-contributions";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -104,9 +105,15 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 7}>
+        <GitHubContributions
+          username="kenny-programmer"
+          githubUrl={DATA.contact.social.GitHub.url}
+        />
+      </BlurFade>
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
@@ -227,7 +234,7 @@ export default function Page() {
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
