@@ -70,28 +70,62 @@ export function GitHubContributions({
 
   useEffect(() => {
     let isMounted = true;
-    async function fetchContributions() {
+
+    async function fetchContributions(isBackground = false) {
       try {
+        if (!isBackground) setLoading(true);
+        // Primary: fetch from our live real-time GitHub scraper route
         const res = await fetch(
-          `https://github-contributions-api.jogruber.de/v4/${username}?y=last`
+          `/api/github-contributions?username=${username}&_t=${Date.now()}`,
+          { cache: "no-store" }
         );
-        if (!res.ok) throw new Error("Failed to fetch");
+
+        if (!res.ok) throw new Error("API route failed");
         const json: ApiResponse = await res.json();
-        if (isMounted) {
+        if (isMounted && json.contributions) {
           setData(json);
           setLoading(false);
         }
       } catch (err) {
-        console.error("Error fetching GitHub contributions:", err);
-        if (isMounted) {
-          setLoading(false);
+        // Fallback directly to jogruber API if local route had an issue
+        try {
+          const fallbackRes = await fetch(
+            `https://github-contributions-api.jogruber.de/v4/${username}?y=last&_t=${Date.now()}`,
+            { cache: "no-store" }
+          );
+          if (fallbackRes.ok) {
+            const fallbackJson: ApiResponse = await fallbackRes.json();
+            if (isMounted) {
+              setData(fallbackJson);
+            }
+          }
+        } catch (fallbackErr) {
+          console.error("Error fetching GitHub contributions:", fallbackErr);
+        } finally {
+          if (isMounted) {
+            setLoading(false);
+          }
         }
       }
     }
 
     fetchContributions();
+
+    // Auto-update when user refocuses the tab / window
+    const handleFocus = () => {
+      fetchContributions(true);
+    };
+    window.addEventListener("focus", handleFocus);
+
+    // Periodic auto-update every 2 minutes while page is open
+    const interval = setInterval(() => {
+      fetchContributions(true);
+    }, 120000);
+
     return () => {
       isMounted = false;
+      window.removeEventListener("focus", handleFocus);
+      clearInterval(interval);
     };
   }, [username]);
 
