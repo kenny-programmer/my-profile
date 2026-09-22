@@ -1,0 +1,8 @@
+{
+  "id": "proj-portfolio",
+  "title": "My Portfolio",
+  "description": "Personal portfolio built with Next.js 15 and TypeScript.",
+  "tags": ["TypeScript", "Next.js", "Tailwind CSS"],
+  "url": "https://kenny-programmer.vercel.app",
+  "stars": 12
+}
