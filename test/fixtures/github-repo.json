@@ -1,0 +1,9 @@
+{
+  "name": "my-profile",
+  "description": "Personal portfolio website",
+  "stargazers_count": 12,
+  "forks_count": 3,
+  "html_url": "https://github.com/kenny-programmer/my-profile",
+  "language": "TypeScript",
+  "topics": ["portfolio", "nextjs", "typescript"]
+}
