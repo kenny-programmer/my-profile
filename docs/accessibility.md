@@ -14,3 +14,4 @@
 - Keyboard-only navigation test
 <!-- Sep 24: skip link -->
 <!-- visible focus rings -->
+<!-- ARIA labels on social icons -->
