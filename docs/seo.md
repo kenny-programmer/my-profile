@@ -16,3 +16,4 @@ Trailing slashes are stripped automatically (except root `/`).
 Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- Sep 24: OG meta tags -->
 <!-- sitemap.xml via next-sitemap -->
+<!-- robots.txt and canonical -->
