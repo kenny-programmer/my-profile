@@ -14,3 +14,4 @@ Trailing slashes are stripped automatically (except root `/`).
 
 ## Sitemap
 Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
+<!-- Sep 24: OG meta tags -->
