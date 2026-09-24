@@ -22,3 +22,4 @@ Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- Sep 24 OG tags -->
 <!-- sitemap.xml -->
 <!-- robots + canonical -->
+<!-- JSON-LD -->
