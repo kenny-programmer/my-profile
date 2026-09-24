@@ -23,3 +23,4 @@ Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- sitemap.xml -->
 <!-- robots + canonical -->
 <!-- JSON-LD -->
+<!-- preconnect -->
