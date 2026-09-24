@@ -13,3 +13,4 @@
 - VoiceOver (macOS: Cmd+F5)
 - Keyboard-only navigation test
 <!-- Sep 24: skip link -->
+<!-- visible focus rings -->
