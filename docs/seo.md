@@ -17,3 +17,4 @@ Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- Sep 24: OG meta tags -->
 <!-- sitemap.xml via next-sitemap -->
 <!-- robots.txt and canonical -->
+<!-- JSON-LD Person + Portfolio -->
