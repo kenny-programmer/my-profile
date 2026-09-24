@@ -18,3 +18,4 @@ Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- sitemap.xml via next-sitemap -->
 <!-- robots.txt and canonical -->
 <!-- JSON-LD Person + Portfolio -->
+<!-- preconnect dns-prefetch -->
