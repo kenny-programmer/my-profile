@@ -32,3 +32,4 @@ Throw `AppError`, `NotFoundError`, or `ValidationError` from `src/lib/error.ts`.
 <!-- reading-time -->
 <!-- Shiki -->
 <!-- tag filter -->
+<!-- RSS feed -->
