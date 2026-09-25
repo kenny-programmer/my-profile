@@ -25,3 +25,4 @@ Throw `AppError`, `NotFoundError`, or `ValidationError` from `src/lib/error.ts`.
 <!-- /blog listing + pagination -->
 <!-- reading-time lib -->
 <!-- Shiki syntax highlight -->
+<!-- tag filter + search -->
