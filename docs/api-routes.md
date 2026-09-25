@@ -30,3 +30,4 @@ Throw `AppError`, `NotFoundError`, or `ValidationError` from `src/lib/error.ts`.
 <!-- Sep 25 blog -->
 <!-- blog listing -->
 <!-- reading-time -->
+<!-- Shiki -->
