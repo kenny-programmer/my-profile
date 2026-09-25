@@ -27,3 +27,4 @@ Throw `AppError`, `NotFoundError`, or `ValidationError` from `src/lib/error.ts`.
 <!-- Shiki syntax highlight -->
 <!-- tag filter + search -->
 <!-- RSS /feed.xml -->
+<!-- Sep 25 blog -->
