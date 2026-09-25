@@ -22,3 +22,4 @@ if (!limiter.allow(ip)) return tooManyRequests()
 ## Error Handling
 Throw `AppError`, `NotFoundError`, or `ValidationError` from `src/lib/error.ts`.
 <!-- Sep 25: blog scaffold -->
+<!-- /blog listing + pagination -->
