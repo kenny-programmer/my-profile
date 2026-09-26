@@ -27,3 +27,4 @@ Always check `useReducedMotion()` before triggering animations.
 <!-- localStorage -->
 <!-- prefers-color-scheme -->
 <!-- animated toggle -->
+<!-- FOUC fix -->
