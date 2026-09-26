@@ -26,3 +26,4 @@ Always check `useReducedMotion()` before triggering animations.
 <!-- Sep 26 dark mode -->
 <!-- localStorage -->
 <!-- prefers-color-scheme -->
+<!-- animated toggle -->
