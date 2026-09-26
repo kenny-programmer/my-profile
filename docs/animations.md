@@ -23,3 +23,4 @@ return <div ref={ref} className={visible ? 'opacity-100' : 'opacity-0'} />
 
 ## Accessibility
 Always check `useReducedMotion()` before triggering animations.
+<!-- Sep 26 dark mode -->
