@@ -10,3 +10,4 @@ This document describes the utility modules in `src/lib/`.
 - **SEO** — sitemap, JSON-LD, meta tags, canonical URLs
 <!-- Sep 27 projects -->
 <!-- tech badges -->
+<!-- demo links -->
