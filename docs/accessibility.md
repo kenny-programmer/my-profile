@@ -12,3 +12,8 @@
 - axe DevTools (browser extension)
 - VoiceOver (macOS: Cmd+F5)
 - Keyboard-only navigation test
+<!-- Sep 24: skip link -->
+<!-- visible focus rings -->
+<!-- ARIA labels on social icons -->
+<!-- contrast ratio 4.8:1 -->
+<!-- toast aria-live region -->
