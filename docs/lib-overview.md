@@ -13,3 +13,4 @@ This document describes the utility modules in `src/lib/`.
 <!-- demo links -->
 <!-- tech filter -->
 <!-- framer motion -->
+<!-- PR branch: pr/sep27-footer -->
