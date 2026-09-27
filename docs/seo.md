@@ -24,3 +24,4 @@ Add new routes to `app/sitemap.ts` using `buildSitemapEntry()`.
 <!-- robots + canonical -->
 <!-- JSON-LD -->
 <!-- preconnect -->
+<!-- PR branch: pr/sep24-nav-fixes -->
