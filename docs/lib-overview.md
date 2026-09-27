@@ -9,3 +9,4 @@ This document describes the utility modules in `src/lib/`.
 - **DX** — env validation, logger, constants, error types
 - **SEO** — sitemap, JSON-LD, meta tags, canonical URLs
 <!-- Sep 27 projects -->
+<!-- tech badges -->
