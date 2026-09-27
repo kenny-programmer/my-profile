@@ -8,3 +8,4 @@ This document describes the utility modules in `src/lib/`.
 - **A11y** — focus trap, contrast checker, skip link
 - **DX** — env validation, logger, constants, error types
 - **SEO** — sitemap, JSON-LD, meta tags, canonical URLs
+<!-- Sep 27 projects -->
