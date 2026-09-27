@@ -28,3 +28,4 @@ Always check `useReducedMotion()` before triggering animations.
 <!-- prefers-color-scheme -->
 <!-- animated toggle -->
 <!-- FOUC fix -->
+<!-- PR branch: pr/sep26-skills-section -->
