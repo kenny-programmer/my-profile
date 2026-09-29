@@ -44,3 +44,12 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 
 Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
 <!-- Sep 27 sections -->
+
+## Dark Mode
+
+This portfolio supports full dark mode with:
+- Smooth transitions without flash-of-unstyled-content
+- Custom scrollbar styled per color scheme
+- WCAG AA-compliant contrast ratios
+- Keyboard-accessible focus rings
+
