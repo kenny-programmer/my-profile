@@ -142,3 +142,11 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
+/* dark mode polish: enhanced scrollbar */
+:root {
+  --scrollbar-thumb: hsl(var(--muted-foreground) / 0.4);
+  --scrollbar-track: transparent;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
