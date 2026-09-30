@@ -53,3 +53,12 @@ This portfolio supports full dark mode with:
 - WCAG AA-compliant contrast ratios
 - Keyboard-accessible focus rings
 
+## SEO
+
+This portfolio is optimized for search engines with:
+- JSON-LD structured data (schema.org `Person` + `WebSite`)
+- Dynamic Open Graph & Twitter Card meta tags
+- Auto-generated sitemap with proper priorities
+- Canonical URLs to prevent duplicate content issues
+- Robots.txt configured for full crawl access
+
